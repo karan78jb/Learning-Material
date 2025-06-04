@@ -1,0 +1,94 @@
+React interview 
+
+1.ReactJS - Features
+ans :- Virtual DOM.
+Components.
+JSX.
+One way data binding.
+Scalable.
+Flexible.
+Modular.
+
+2.whitch directtion react can use dataflow ? '
+ans :- React, a Javascript library, uses unidirectional data flow. The data from the parent is known as props. You can only transfer data from parent to child and not vice versa.
+       it cna use useState function for pass data from child to parent. but it is use of callback.
+3.jsx in react ?
+ans :- JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+
+4.what is ref 
+ans :- Refs is the shorthand used for references in React. It is similar to keys in React. It is an attribute which makes it possible to store a reference to particular DOM nodes or React elements. It provides a way to access React DOM nodes or React elements and how to interact with it.if we change using ref then it is uncotrolled component.
+
+5.different between state and props
+ans :-State refers to the internal data of a component that can change over time, while props are used to pass data between components.
+
+6.working process of setState ?
+ans :- setState() allows you to change state in a React class component
+
+7.LifeCycle of react ?
+ans :- componentdidimount, componentdidupdate and componentwillunmount
+
+8.controlled and uncontrolled componttnt 
+ans :- component manage by state and react life cyacle it is called controlled component. if component does'n manage by react life cycle it is called uncotrolled compontnt
+       like if we use ref and change the properties of real dom then it is called uncontrolled component.
+
+9.what are fragmemt
+and :- it is a empty div . component can not return the multiple elements .Fragments let you group a list of children without adding extra nodes to the DOM.
+
+10.give the advantages of function compoent over class compoent
+ans :- Simplicity: Functional components are simpler and easier to understand than class components. They don't have the added complexity of lifecycle methods, state, and this binding. Performance: Functional components are more performant than class components.
+
+11. different between statefull and stateless compoent 
+ans :- before hook function compoent is a stateless component after hook implimentation both are equivalence. stateless is focus on sololy(only) ui.
+       if data chaneg overtime then we need to use stateful. other wise stateless is use.
+
+12. purpose of using super inside constroctor ?
+ans :-Super is a keyword in JavaScript and is used to call super or parent class in the hierarchy. React class extends React Component with ES6 syntax.
+
+13. inline condition 
+ans :- it is a concise way to conditionally render content or components within JSX. component ui render based on condition result
+
+14. why can't browser read jsx ?
+ans :- JSX isn't directly supported by browsers, requiring conversion by tools like Babel to transform JSX into valid JavaScript. This transpilation ensures browsers can interpret and execute the JSX-embedded code in React applications.
+
+15.context api?
+ans :-Context API is used to pass global variables anywhere in the code. It helps when there is a need for sharing state between a lot of nested components. It is light in weight and easier to use, to create a context just need to call React
+
+16. what is redux ?
+ans :- Redux helps you manage "global" state - state that is needed across many parts of your application. The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
+
+17 advantages of redux over context?
+ans :-React Context API is a simpler solution suitable for smaller applications with simple state management needs, while Redux is a more powerful solution suitable for larger and more complex applications 
+      Predictable State Management. One of the biggest benefits of using Redux is that it provides a predictable way to manage state. ...
+	Easy to Test. ,Community Support. ,Complexity. ,Boilerplate Code. ,Simplicity. ,Reduced Boilerplate Code. ,Better Performance.
+
+18.redux devtool ?
+ans :- Developer Tools to power-up Redux development workflow or any other architecture which handles the state change (see integrations). It can be used as a browser extension (for Chrome, Edge and Firefox), as a standalone app or as a React component integrated in the client app.
+
+19. different between redux and redux toolkit
+ans :- Redux is powerful, but setting it up and writing boilerplate code for actions and reducers can be time-consuming. Redux Toolkit is a set of utilities, including a standardized way to write reducers, create actions, and configure the Redux store
+
+20.mapStateToProps() and mapDispatchToProp()
+ans :-While mapStateToProps() connects components to the state, mapDispatchToProps() empowers components to dispatch actions to modify that state. This function also takes the entire state as an argument, but it returns an object with functions that dispatch actions.
+
+for my opinion when we use multiple state in component then use mapStateToProps() same as mapDispatchToProp() because it is easy to handle. and  useSelector  is hook for same work
+
+21. useDispatch and useSelector difference.
+and :- The useSelector hook allows access to the state stored in a Redux store, while the useDispatch hook enables dispatching of actions to the store.
+
+22. state store in redux .
+ans :- in memory
+
+23. different between redux and localstorage"
+ans :- local storage have limitation to store data. also state store in memory and when refresh then it is clean up but not in local storage
+
+24. whole process of redux 
+ans :- component -> action (->service) -> reduces-> state->component
+
+25. use of middleware 
+ans :- Redux middleware provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. People use Redux middleware for logging, crash reporting, talking to an asynchronous API, routing, and more
+
+26. why should you dispatch action to update state and not update store diectly.
+ans :- store in immutable, we can not directly change. when we use use dipatch for update store then first it create a new updated store and override it.
+
+27.why store in immutable?
+ans :- Predictable State Changes (we can predict how data can change in dev tool in tree structure ), Concurrency when multiple task perform as a single time then if store is mutable then is crate a race condition like loop dependency create.

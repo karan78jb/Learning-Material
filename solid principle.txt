@@ -1,0 +1,19 @@
+--Solid Principles 
+s- single responsibility principle :-
+            ONE CLASS  should have one reason to change . it means when model can access in another class have one logic method is available like : 
+            save to db in one class calculate value in another class.
+o- open/close principle :-
+            Open for extension but close for modification.it means the class have already test and live then it can not modifi but we can expand it using the another 
+            class inherit it.
+L- Liskov substitution principle :- 
+            like parent clild, subclass is expand the capability it can not nerrow it down, it means when we replce the parent obj into chile then it can
+            run properly, not break program, it accept the result is diffenent.
+I- Interface Segmented principle :- 
+            in the child of any interface not need to impliment all method on that case we need to split the interface into multiple interface and child need 
+            those propertis then it inherit one of available all interface.
+D- Dependency Inversion Principle :- 
+            It means we access the interface instand of pass object of class , ex : loosly coupled
+            use constructor for initialize the interface. it dependent on interface rathen than concrete classes.
+            
+
+  

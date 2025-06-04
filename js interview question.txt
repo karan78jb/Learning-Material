@@ -1,0 +1,45 @@
+what is js :- it convert static web pages into dynamic and interective web pages
+data type :- premetive - Number,string,boolean,undefine,null  - this data type is immutable and it hold single value,simple data type, not provide more flexible
+             non -premetive - object , array,functoin,date,regExp
+array :- it is store the collection of values
+var - it is a function scoped , not block scope,
+let - it is a block scope variable
+const - it can not reDefine it
+
+Loop :
+for loop - iterate a block of code a speciific number of times
+while loop - execute a block of code while a certain condition is true
+do-while loop - same as while loop , except the block of code excute once
+for-of loop - it used the loop through the values of an object like arrays, it allow to access each value directly without having to use an index
+for in loop - it used to loop through the properties of an object, it allow you to iterate over the keys of an object and access the values associate eith those keys.
+
+methos : forEach it can take function as a parameter and good for performace because it not create a variable, it can work both for-of and for-in
+map, reduce, filter
+
+functions in js :- 
+type of funcions : 
+1. named - simple function like sum(2,3) no explenation is required.
+2. anonymous function - function not have name of function. console.log(function(a){return a}(3))
+3. Function Expression - it is way to define a function in js by assigning it to a  variable. const add = function(){}
+4.arrow function - concise syntax for define function in js 
+                   in simple function we can also call before declaration , but in arrow it not allow 
+                   in arrow funvtion this key word reference the window object'
+5.callback function - it is a function that is passed as an argument to another function. which function it argument it is called callback function.
+6.Higher order function - function have another function as an argument it is called higher order function it also return another function.
+call back hell nested call back available
+
+event handling :- when use can click the button then event accure.it is responde the user action on webpage.
+ mouse, mouseOver,krydown,keyup,focus,blur,change,load,resize
+
+async :- asynchromnous operation are operation that do not block the execution the code.setTimeOut,promises, uploading files, animation
+promises - way to handle asynchronous function , a promise represent a value that may not be available yet but will be available at some point in the future. 
+promise can be in one three states- pending,resoled and rejected
+
+hoisting :- it is a javascript behavior to move declaration at the top. but not assignment like var x= 10 then var x; go to top not 10;
+
+js senario based interview question :- 
+how to do live search in js suggetion :- apply input on change event .
+how to validate user input as they type in a form :- by using event handling of input event.
+how to implement pagination for display large sets of data :- by using slice() method or react-pagination library.
+how to store key-value pair :- object or map
+how to implement drag-and-drop in web - set draggable = true, and dragstart event it pre requisite

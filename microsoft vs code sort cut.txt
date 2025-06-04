@@ -1,0 +1,15 @@
+--microsoft visual studio code sort-cut 
+
+- ctrl + L :- Remove Current Line
+- ctrl + k + d :- Fix formatting
+- ctor + tab + tab :- Generate constructor
+- foreach + tab +tab :- generate foreach
+- ctrl + k + c :- comment the selected block
+- ctrl + k + u :- uncomment the selected block 
+- ctrl + D :- duplicate line
+- ctrl + m + m :- expand block ex:- if block
+- ctrl + r + m :- extract method , it create a new method for selected text and call it in replace of block
+- f12 :- goto variable declare for selected varible in use in another space,
+- ctrl +r + r :- rename method and variable in all space we use.
+- sw + tab + tab :- generate switch block
+- alt + up/down arrow :- move the line up or down .

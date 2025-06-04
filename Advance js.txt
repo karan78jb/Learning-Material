@@ -1,0 +1,65 @@
+Advance js :--
+
+BytagName and queryselector :- both are same, so count of selected element of both is same 
+                               but when we remove the element using inspect then queryselector give previous result but tagname give latest count.
+
+append element or insertelement :- when we use prepend method it insert element at a first but afetr thet when we use append then the element move first to last not 
+                                   reoeated insert so we show only new add element at position last not both position. so, insert is solve this isssue
+
+GetComputingStyle :- this methos use to access the value of style property using js.
+document.documentElement.style.setproperty('variablename','value') :- change the value of style variable.
+addEventListner :- is more useful then direct apply event becauase when at once event accure then we can remove event listner.
+bubbling :- it like when parent and child have onclick event so when child event occure then also parent event occure.
+e.stopPropagation() :- it is use to stop the bubbling in event. 
+Event delegation :- select parent node and apply event in child siblings using e.target.
+bind :- when we call a function in event then funcName.bind(parametor) for access the e in function define.
+intersection observer :- it is use alternative of scroll.
+                         ex:- const obs=new InsersectiontObserver(funcCall,{root:null,thresshold :height});
+                                     const funcCall(entries,observer){//logic}
+
+                                     obs.observe('section');
+domcontentllloader :- this event execute after load all content of document.
+async script in head :- js load parellal with html parsing and also execute middel of them. js file excution order not fix.use for analytic.
+defer script in head :- js load parrelel with html parsing and execute after html parsing. js file execution order are fix.
+
+-----oop
+higher order function :- it is a function take function as a parameter it is caller higher order function.
+                         or it return the function is called higher order function.
+oop :- it a organize the code bashed on classes and objects.
+class :- it is blueprint where instance is created. it is blueprint beacause it not contain data it is plain.fir create obj and store data.
+constructor function :-
+        it is same as a simple function but call with 'new' keyword. so new obj is created.it return object which parameter is initialize.
+        arrow function not work as a constructor function.beacause when we use 'this' keyword for point parameter then arrow retuen window object.
+        create a method in contructor is a bad practice beacause when create 100 obj then it create a 100 copy of this method.instend of this we can use prototype.
+prototype :- it contains all the method also like as a delegate .
+             it create using constructor function. for ex:- constructorFuncName.prototype.funcName=function(){//logic};
+             drowback is we can not create getter and setter for obj.
+
+class ES6 :-it not a syntax like oop in java or c#.it is a special type of function like ex:- const cName= class{} or class cName{}.
+         other method of a class is act as a prototype for this methos.also create prototype with classname same as before.and call it for obj.
+         it only execute on strict mode.it create getter and setter method for obj is call same as a properties call.
+
+getter and setter :- it is use for validation for initialize the properties.
+static method :- it method create using Constructor function and class. like ex:- constructorFuncName.MethodName=function (){} or in class use static keyword.
+Object.create(className); :- it create new object of class.
+
+inherit contsructor function :- child have a parentConstroctor.call(this,parameternames); in function.
+                                for prototype child.prototype = Object.create(parent.prototype); then child access the parent prototype.
+inherit class :- using extend key word . 
+# :- this is use for make field private in class like ex:- #name:'karan'; only google chrome support this.
+
+method chinable :- like ex :- obj.method1().method2(); call both method in one line one by one. for that methods are return this object.
+
+--Geolocation
+leaflet :- it is open source library for mobile friendly interactive map .
+localstorage :- it is use to store temp data in browser it store key value pair data.
+                it have method to set and get data using web js. available in inspect/application.
+                there are many methods :- setItem(),getItem(),removeItem(),clear(),key().
+--async await
+promise :- it is a container for an asynchronously delivered value. consume promise using fetch function.
+micro queue :- in ayanc promise.resolve is micro queue where it has priority to execute in call stack.
+call queue :- it has less priority to execute task after micro.
+Promise.race :- it take a promise which is take less time. either resolve or reject promise.
+Promise.any :-  it take a promise which is take less time for reolve promise.
+promise.allSettled :- it return all the promise responce.
+

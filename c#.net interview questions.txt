@@ -1,0 +1,26 @@
+Interview c#.net question :-
+
+1.difference between web api and rest api c#
+ans :- REST APIs use the HTTP protocol to send and receive data. Web APIs, on the other hand, rely on multiple communication protocols like SOAP, XML-RPC, and JSON-RPC
+2.What are the advantages of restful web services over SOAP?
+ans :- SOAP messages are larger, which makes communication slower. REST has faster performance due to smaller messages and caching support. SOAP is difficult to scale. The server maintains state by storing all previous messages exchanged with a client.
+3.What is ORM(object-relational-Mapping), list some examples of ORM?
+ans :- Object–relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between a relational database and an object-oriented programming language
+4.What is LINQ and its use case (Methods of LINQ)?
+ans :- LINQ provides a unified way to query and manipulate data from different types of data sources, including databases, XML, collections, and more. It is particularly associated with the LINQ to Objects, LINQ to SQL, and LINQ to XML implementations.
+5.can we apply custom condition in contains in linq c#
+ans :- In LINQ Contains it also checks with the data sources, to check whether the collection of lists contains their desired element or not, Any apply same operation but we can apply custom condition based on it.
+6.Authorization and authentication process in .net ?
+ans :- Authentication is the process of determining a user's identity. Authorization is the process of determining whether a user has access to a resource
+7.What are Generic classes?
+ans :-  Generic classes encapsulate operations that are not specific to a particular data type. The most common use for generic classes is with collections like linked lists, hash tables, stacks, queues, trees, and so on.
+8.what is non generic class?
+ans :- Non-generic collections are specialized data storage and retrieval classes that handle stacks, queues, lists, and hash tables. The "System. Collections" namespace contains the Non-generic Collection classes. Non-generic collections store elements in object arrays internally, allowing them to hold any data type.
+9.Hot Reload in .net
+ans :- The ability to make code changes without restarting the application, speeding up development.
+10.What is meant by pattern matching?
+ans :- Pattern matching is the technique that identifies specific patterns or sequences or a combination of characters within a larger piece of information.
+11.Idempotent PUT vs POST
+ans :- The difference between PUT and POST is that PUT is idempotent: calling it once or several times successively has the same effect (that is no side effect), whereas successive identical POST requests may have additional effects, akin to placing an order several times
+12. difference between singleton and static class in c#
+ans :-A Singleton class supports interface implementation, while static classes cannot implement interfaces. we can create a clone of singleton class.Singleton is a design pattern that assures a single instance of a Class for the lifetime of an application.
